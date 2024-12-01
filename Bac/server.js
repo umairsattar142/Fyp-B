@@ -23,6 +23,12 @@ const billingRoutes = require("./routes/billingInforoute");
 const chatRoutes = require("./routes/chatRoutes");
 const ChatNote = require('./models/chatsNote.js');
 
+// Call the connectDB function to establish the connection
+app.get("/",(req,res)=>{
+    res.send("Helo").status(200)
+})
+
+
 // Initialize express app and server
 const app = express();
 const server = http.createServer(app);
